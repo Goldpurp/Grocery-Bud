@@ -1,0 +1,194 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Cutive Mono", monospace;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  min-height: 100dvh;
+  justify-content: center;
+  background-color: #f1f5f8;
+}
+
+.container {
+  padding: 1%;
+  display: flex;
+  max-width: 90%;
+  margin-top: 100px;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 30px 1px rgba(213, 209, 209, 0.824);
+  /* position: relative; */
+}
+
+.header h1 {
+  display: flex;
+  font-size: 30px;
+  margin-top: 30px;
+  color: #063251;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.form {
+  display: flex;
+  padding: 20px 30px;
+  align-items: center;
+  justify-content: center;
+  color: rgb(13, 13, 37);
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input {
+  border: none;
+  width: 400px;
+  color: #4c6b81;
+  padding: 7px 13px;
+  background-color: #f1f5f8;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.submit {
+  width: 70px;
+  border: none;
+  padding: 7px;
+  outline: none;
+  background-color: #a5d5f8;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.submit:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #2d4e64;
+}
+
+p {
+  color: #063251;
+}
+
+/* ALERT */
+
+form .alert {
+  /* visibility: hidden; */
+  padding: 1px;
+  display: flex;
+  padding: 0% 10%;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.danger {
+  padding: 7px;
+  display: flex;
+  color: #721c24;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8d7da;
+}
+.success {
+  padding: 7px;
+  display: flex;
+  color: #155724;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4edda;
+}
+
+/* LIST */
+
+.items-list {
+  display: flex;
+  padding: 1% 10%;
+  color: #063251;
+  justify-content: space-between;
+}
+
+.item-controls {
+  gap: 10px;
+  display: flex;
+}
+
+/* CONTROL BTNS */
+
+.fa-regular {
+  color: rgb(95, 145, 19);
+}
+
+.fa-regular:hover {
+  cursor: pointer;
+  color: rgba(95, 145, 19, 0.587);
+}
+
+.edit-btn {
+  border: none;
+  outline: none;
+}
+
+.fa-solid {
+  outline: none;
+  border: none;
+  color: rgb(210, 59, 59);
+}
+
+.fa-solid:hover {
+  cursor: pointer;
+  color: rgba(236, 12, 12, 0.605);
+}
+
+.delete-btn {
+  border: none;
+  outline: none;
+}
+
+/* BOTTOM BTN */
+
+.clear {
+  color: red;
+  border: none;
+  outline: none;
+  margin: 5px 0px 5px 0px;
+}
+
+.clear:hover {
+  cursor: pointer;
+  color: rgba(255, 0, 0, 0.788);
+}
+
+.clear-box {
+  display: flex;
+  justify-content: center;
+}
+
+.groceries-container {
+  visibility: hidden;
+}
+
+.show-groceries-container {
+  visibility: visible;
+}
+
+@media (max-width: 450px) {
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .items-list {
+    padding: 1% 10%;
+  }
+}
